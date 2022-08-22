@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .product-card-container{
+        background-color: #f2ebe3;
+        height: 100%;
+        width: 100%;
+        margin-top: 40px;
+        border-radius: 7px;
+        display: grid;
+        place-items: center;
+       }
+       body{
+        display: grid;
+        place-items: center;
+        height: 80vh;
+        background-color: #f2ebe3;
+       }
+       .product-card{
+        display: flex;
+
+       }
+       img{
+        height:405px;
+        width:275px;
+        border-top-left-radius:10px ;
+        border-bottom-left-radius:10px ;
+       }
+       .text{
+        height:405px;
+        width: 275px;
+        background-color: white;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius:10px;
+        margin: auto;
+       }
+       h4{
+        font-weight: lighter;
+        font-family: monospace;
+        color:#6c7289 ;
+       }
+       H2{
+        line-height:25px;
+        font-family: 'Fraunces', serif;
+       }
+       P{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color:#6c7289;
+       }
+       .price{
+        display: flex;
+        margin-top:30px;
+       }
+       .owo{
+        margin-top:-3px;
+        color: hsl(158, 36%, 37%);
+        font-size: 30px;
+       }
+       del{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 11px;
+        margin-left: 12px;
+        color:hsl(228, 12%, 48%) ;
+       }
+
+       button{
+        width: 215px;
+        height:45px;
+        background-color:hsl(158, 36%, 37%);
+        border-width: 0px;
+        border-radius: 7px;
+        font-weight: 700;
+        color:white;
+        
+           }
+       .inside-text{
+        margin: 30px;
+
+       }
+
+       ion-icon{
+        margin-right:10px ;
+       }
+       button:hover{
+        background-color:hsl(159, 39%, 27%);
+        color:#ffffff
+       }
+
+       @media (max-width:500px) {
+.product-card{
+        display: flex;
+        flex-direction: column;
+        margin-top: -40px;
+       }
+       .text{
+        height: 345px;
+        width: 345px;
+        border-bottom-left-radius:10px ;
+        border-bottom-right-radius:10px ;
+        border-top-left-radius:0px ;
+        border-top-right-radius:0px ;
+       }
+       img{
+        height:372px;
+        width:345px;
+        margin-bottom: -4px;
+        border-top-right-radius:10px ;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        src: url(image-product-mobile.jpg);
+       }
+       .footer{
+        margin-top:-55px;
+        margin-right: 45px;
+    }
+
+    button{
+        margin-top: -20px;
+    }
+
+    .owo{
+        margin-top: -17px;
+    }
+
+    .inside-text{
+        margin-top: -15px;
+    }
+
+    .link{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        margin-top: -330px;
+        margin-right: 370px;
+    }
+
+    .links{
+        height: 25px;
+        width: 25px;
+        font-size: 40px;
+    }
+    }
+
+       .a{
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        background-color: rgb(34, 201, 134);
+        color: black;
+        font-size: 30px;
+        padding-top: 5px;
+       }
+
+       .a:hover{
+        background-color: rgb(5, 151, 92);
+       }
+
+       .links{
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+        margin-right: 10px;
+        margin-top: 10px;
+
+       }
+       .link{
+        display: flex;
+       }
+    </style>
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.google.com/specimen/Montserrat" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="product-card-container">
+        
+<div class="product-card">
+<section>
+    <img src="C:\Users\ABDULJABBAR\Downloads\product-preview-card-component-main\product-preview-card-component-main\images\image-product-desktop.jpg">
+</section>
+<section class="text">
+    <section class="inside-text">
+<h4>P E R F U M E</h4>
+<h2>Gabrielle Essence Eua De Parfum
+<p>A floral,solar and voluptuous<br>interpretation composed by<br> Olivier Polge,Perfume-Creator<br>for the house of CHANEL.</p>
+<section class="price">
+    <h2 class="owo">$149.99</h2>
+    <del>$169.99</del>
+</section>
+<button><ion-icon name="cart-outline"></ion-icon>Add to Cart</button>
+</section>
+</section>
+</div>
+</div>
+<section class="footer">
+<a href="preview-card_1.html"><button class="a"><ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+</section>
+<div class="link">
+    <a href="index.html"><button class="links">1</button></a>
+    <a href="preview-card_1.html"><button class="links">2</button></a>
+    <a href="preview-card_2.html"><button class="links">3</button></a>
+    <a href="preview-card_3.html"><button class="links">4</button></a>
+    <a href="preview-card_4.html"><button class="links">5</button></a>
+</div>
+</body>
+</html>
+
